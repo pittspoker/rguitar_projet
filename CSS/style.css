@@ -1,4 +1,4 @@
-* {
+*, ::before, ::after {
     box-sizing: border-box;
     padding: 0;
     list-style: none;
@@ -89,10 +89,6 @@ h1 {
 #background img{
     width: 100%;
 }
-
-/*#background span {
-    position: relative;
-}*/
 
 #background span:before {
     content: "";
@@ -460,8 +456,6 @@ button {
 
 @media screen and (max-width :768px){
 
-
-
     /*Image tablette/mobile*/
     .bloc_text img {
         height: inherit;
@@ -473,6 +467,10 @@ button {
     /*Form*/
     form {
         width: 100%;
+    }
+
+    .bloc_section_boutique {
+        width: 80%;
     }
 }
 
