@@ -54,6 +54,7 @@ header img {
 /* Alignement des élément li avec la propriété display flex sur son élément parent */
 nav ul {
     display: flex;
+    /*gap: 30px;*/
 }
 
 /* On donne une largeur à l'élément li et on le centre */
@@ -70,7 +71,6 @@ nav li {
     padding: 8px;
     border-radius: 10px;
 }
-
 /**/
 
 #background {
@@ -78,12 +78,16 @@ nav li {
     background: url("../assets/bakground.jpg") no-repeat; /* Intégration de l'image en arrière-plan*/
     background-size: cover; /* L'image prends tout l'espace */
     width: 100%;
-    height: 1000px;
+    height: 100vh; /* Le background prend toute la hauteur de l'écran */
+    /**/
+    margin-top: -80px; /* On remonte le background au niveau du header */
+    z-index: -1; /* On positionne le background en dessous du header */
+    /**/
 }
 
 /* Bloc parent du h1 */
 .container-title {
-    width: 70%;
+    /*width: 70%;*/
     height: 300px;
     padding-right: 35px;
     /*Flexbox*/
@@ -387,6 +391,7 @@ button {
 }
 
 /* Responsive */
+
 @media screen and (max-width :1150px) {
 
     /*Background*/
