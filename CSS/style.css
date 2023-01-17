@@ -261,22 +261,37 @@ même élément parent, afin de leur assigner des propriétés CSS.*/
 .bloc_guitar {
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 80%;
     margin: auto;
     margin-top: 45px;
 }
 
-figure a{
-    width: 20%;
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: normal;/* permet d'égaliser la hauteur des cards */
+}
+
+figure h4 {
+    margin-top: auto; /* Permet d'aligner les nom de guitares*/
+    text-align: center;
 }
 
 figure img {
     width: 100%;
 }
 
+figcaption {
+    margin-top: auto; /* Permet de mettre sur la même ligne le bloc du prix et du bouton */
+}
+
 figcaption, figcaption p {
     text-align: center;
+}
+
+.legend_text p{
+    margin: 0;   
 }
 
 .legend_text button{
@@ -458,8 +473,9 @@ button {
     /*Boutique section*/
     .bloc_guitar {
         display: flex;
+        /*
         align-items: center;
-        justify-content: center;
+        justify-content: center;*/
         width: 100%;
         margin: auto;
         margin-top: 45px;
