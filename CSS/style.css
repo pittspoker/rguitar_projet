@@ -3,6 +3,9 @@
     box-sizing: border-box;
     padding: 0;
     list-style: none;
+    /**/
+    scroll-behavior: smooth; /* Au clic des liens du menu, le scrolling réagit lentement */
+    /**/
 }
 
 body {
@@ -80,7 +83,7 @@ nav li {
     width: 100%;
     height: 100vh; /* Le background prend toute la hauteur de l'écran */
     /**/
-    margin-top: -80px; /* On remonte le background au niveau du header */
+    margin-top: -80px; /* On remonte le background au niveau du header Afin que l'image prenne l'espace de l'écran*/
     z-index: -1; /* On positionne le background en dessous du header */
     /**/
 }
@@ -245,7 +248,6 @@ même élément parent, afin de leur assigner des propriétés CSS.*/
 #boutique h3{
     text-align: center;
 }
-
 
 .bloc_section_boutique span:before { /* Création du trait */
     content: "";
