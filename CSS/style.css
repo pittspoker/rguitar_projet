@@ -136,7 +136,7 @@ en utilisant la prpriété display none */
 /**/
 
 article p {
-    text-align: justify;
+    text-align: justify; /* Le texte du texte sur les 2 marges */
 }
 
 /* Alignement des textes et des images avec les propriétés flexbox */
@@ -407,20 +407,21 @@ button {
     padding: 9px 0 9px 0;
 }
 
-/* Responsive */
+/*//////////////////////////*/
+/*/////// RESPONSIVE ///////*/
+/*//////////////////////////*/
 
 @media screen and (max-width :1150px) {
 
     /*Background*/
     #background span:before {
-        display: none;
+        display: none; /* Le trait du titre est supprimé */
     }
 
     .container-title {
         width: inherit;
         height: auto;
         padding-right: 0;
-
         justify-content: center;
         align-items: center;
         top: 0;
@@ -431,7 +432,7 @@ button {
 @media screen and (max-width :992px) {
     /*Nav*/
     header {
-        flex-direction: column;
+        flex-direction: column; /* Le logo et les liens sont placés en colonne */
     }
 
     nav {
@@ -439,7 +440,7 @@ button {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Les liens sont placés en colonne */
         line-height: 45px;
     }
 
@@ -451,7 +452,7 @@ button {
     .bloc_rguitar {
         display: flex;
         justify-content: space-around;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* La propriété column-reverse permet de placer les éléments en colonne et d'inverser l'ordre d'apparition. Ici les images apparaitront avant le texte. */
     }
 
     .bloc_text {
@@ -475,9 +476,6 @@ button {
     /*Boutique section*/
     .bloc_guitar {
         display: flex;
-        /*
-        align-items: center;
-        justify-content: center;*/
         width: 100%;
         margin: auto;
         margin-top: 45px;
