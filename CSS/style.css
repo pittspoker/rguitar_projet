@@ -37,7 +37,7 @@ h4 {
     text-transform: uppercase;
 }
 
-h5{
+.infos_footer h4{
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #fff; 
@@ -560,7 +560,7 @@ footer {
         flex-direction: column;
         
     }
-    .infos_footer h5{
+    .infos_footer h4{
         margin-bottom: 0;
     }
     .infos_footer p {
