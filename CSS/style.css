@@ -91,7 +91,7 @@ nav li {
 
 #background {
     position: relative;
-    background: url("../assets/bakground.jpg") no-repeat; /* Intégration de l'image en arrière-plan*/
+    background: url("../assets/bakground.webp") no-repeat; /* Intégration de l'image en arrière-plan*/
     background-size: cover; /* L'image prends tout l'espace */
     width: 100%;
     height: 100vh; /* Le background prend toute la hauteur de l'écran */
